@@ -1,0 +1,100 @@
+.burger{
+    display: none;
+}
+
+.burger div{
+
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px;
+	transition: all 0.3s ease;
+	border-radius: 1px;
+
+}
+
+@media screen and (max-width: 1200px){
+    
+    .container a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    nav{
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    nav a:not(.apply)::after{
+        display: none;
+    
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 992px){
+
+    #logo{
+        width: 20%;
+        padding: 10px 0;
+    }
+
+    nav li{
+        padding: 0;
+        margin: 0 7px;
+    }
+
+}
+
+
+@media screen and (max-width: 769px){
+
+    .nav{
+        display: none !important;
+    }
+
+
+
+    .nav-mobile{
+        display: block !important;
+    }
+
+    .nav-mobile li{
+        display: block;
+        margin: 40px 0;
+    }
+
+    .header-extend{
+        height: 100vh;
+    }
+
+
+    
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .burgerX .line1{
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+	
+	.burgerX .line2{
+		opacity: 0;
+	}
+	
+	.burgerX .line3{
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+
+
+}
