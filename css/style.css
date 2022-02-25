@@ -15,6 +15,7 @@ header{
     width: 100%;
     top: 0;
     transition: 0.4s;
+    z-index: 999;
 }
 
 header::after{
@@ -123,16 +124,40 @@ footer a{
 }
 
 
-.front-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.img-container{
+    position: relative;
+    background-color: white;
 }
+
+.front-title {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 
 .front-img{
     width: 100vw;
     max-width: 100%;
+    opacity: 0.6;
+}
+
+.standard-img{
+    width: 50%;
+    display: block;
     border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    margin: 40px 0 20px 0;
 }
 
